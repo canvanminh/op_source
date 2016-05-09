@@ -145,6 +145,16 @@ header, .container{
         }
     }
 } 
+.logo-item{
+    a{
+        background: url(#{$image-theme-path-base}image-item2.jpg) no-repeat;
+        display: inline-block;
+        @include size(198px, 108px);
+        span{
+            display: none;
+        }
+    }
+} 
 
 .toggle-overlay-container{ 
     background-color: $theme-color;
@@ -299,15 +309,17 @@ header, .container{
     li{
         &:last-child{
             a{
-                color: $gray-dark;
+                color: #ffffff;
                 text-decoration: underline;
             }            
         }
     }
     h1{
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 5px;
         margin-top: 0;
+        color: #ffffff;
+        text-transform: uppercase;
     }
     a{
         color: $light-gray;
@@ -316,7 +328,8 @@ header, .container{
  }
 
 .maincols{
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    background: #f9f9f9;
 }
 /* content */
 #content {

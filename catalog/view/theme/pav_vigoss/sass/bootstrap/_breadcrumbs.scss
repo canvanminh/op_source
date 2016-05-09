@@ -16,7 +16,7 @@
 
     + li:before {
       content: "\f2fb"; // Unicode space added since inline-block means non-collapsing white-space
-      color: $breadcrumb-color;
+      color: #ffffff;
       font-family: Material-Design-Iconic-Font;
       position: absolute;
       left: 0;

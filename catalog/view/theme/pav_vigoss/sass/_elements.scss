@@ -1237,7 +1237,7 @@
     border-bottom:1px solid $border-color;
 }
 .border-top{
-    border-top:1px solid $border-color;
+    border-top:0px ;
 }
 .border{
     border:1px solid $border-color;
@@ -1469,12 +1469,13 @@
 ------------------------------------*/
 /*Padding Around the Block*/
 .space-padding-tb-10 {
+    background: #ffffff no-repeat;
+    padding-left: 10px;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
 }
 .space-padding-tb-20 {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important; 
+    padding: 10px !important;
     background-color: #272727;
 }
 .space-padding-tb-25 {

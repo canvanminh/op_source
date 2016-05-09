@@ -3,7 +3,8 @@
 }
 .panel-body .list-group-item{
 	border: none;
-	@include rtl-padding-left(0);
+	@include rtl-padding-left(20px);
+	text-align: left;
 	i{
 		cursor: pointer;
 		@include size(20px,20px);

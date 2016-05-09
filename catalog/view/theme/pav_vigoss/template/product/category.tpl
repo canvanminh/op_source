@@ -59,32 +59,19 @@
         </div>
         </div> 
         <?php } else if ($categories) { ?>
-          <div class="refine-search panel panel-center space-20">
-            <div class="panel-heading">
-              <h4 class="panel-title"><?php echo $text_refine; ?></h4>
-            </div>
-            <div class="panel-body border">
-              <?php if (count($categories) <= 20) { ?>
-                  <ul class="list-inline">
-                    <?php foreach ($categories as $category) { ?>
-                    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                    <?php } ?>
-                  </ul>
-              <?php } else { ?>
-              <div class="row">
-                <?php foreach (array_chunk($categories, ceil(count($categories) / 4)) as $categories) { ?>
-                <div class="col-sm-3">
-                  <ul class="list-inline">
-                    <?php foreach ($categories as $category) { ?>
-                    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                    <?php } ?>
-                  </ul>
-                </div>
-                <?php } ?>
-              </div>
-              <?php } ?>
-            </div>
-         </div>    <!-- end refine-search -->
+         <div class="row-inner clearfix">
+           
+           <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12" >
+              <div  class="logo-item img-responsive"><a href="<?php echo $home; ?>" ></a></div>
+           </div>
+           <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+              <div  class="logo-item img-responsive"><a href="<?php echo $home; ?>" ></a></div>
+           </div>
+           <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+              <div  class="logo-item img-responsive"><a href="<?php echo $home; ?>" ></a></div>
+           </div>
+
+         </div>
       <?php } ?>
 
       <?php if ($products) { ?>
